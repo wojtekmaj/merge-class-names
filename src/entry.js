@@ -1,9 +1,10 @@
 const mergeClassNames = (...args) => args.reduce(
-  (classList, arg) =>
+  (classList, arg) => (
     (typeof arg === 'string' || arg instanceof Array) ?
       classList.concat(arg) :
-      classList,
-  []
-).join(' ');
+      classList
+  ),
+  [],
+).filter(className => className).join(' ');
 
 export default mergeClassNames;
