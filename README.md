@@ -1,0 +1,52 @@
+# Merge-Class-Names
+A function that merges given class names, no matter their format. Filters out invalid class names as well.
+
+## tl;dr
+* Install by executing `npm install merge-class-names` or `yarn add merge-class-names`.
+* Import by adding `import mergeClassNames from 'merge-class-names'`.
+* Pass arguments to it. Forget.
+
+## Accepted formats
+* Strings with one or multiple class names: `a`, `a b`
+* Array of strings with one or multiple class names: `['a', 'b']`, `['a b', 'c d']`.
+
+## Examples
+
+```js
+> mergeClassNames('a', 'b', 'c');
+< 'a b c'
+
+> mergeClassNames('a b', 'c d', 'e f');
+< 'a b c d e f'
+
+> mergeClassNames(['a', 'b'], ['c', 'd']);
+< 'a b c d'
+
+> mergeClassNames(['a b', 'c d'], ['e f', 'g h']);
+< 'a b c d e f g h'
+
+> mergeClassNames('a', 'b', falsyCondition && 'c');
+< 'a b'
+
+> mergeClassNames('a', 'b', 'c', null, ['d', null], () => {}, 'e', undefined);
+< 'a b c d e'
+```
+
+## License
+
+The MIT License.
+
+## Author
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/wojtekmaj.png?s=100" width="100">
+    </td>
+    <td>
+      Wojciech Maj<br />
+      <a href="mailto:kontakt@wojtekmaj.pl">kontakt@wojtekmaj.pl</a><br />
+      <a href="http://wojtekmaj.pl">http://wojtekmaj.pl</a>
+    </td>
+  </tr>
+</table>
