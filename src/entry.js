@@ -5,6 +5,6 @@ const mergeClassNames = (...args) => args.reduce(
       classList
   ),
   [],
-).filter(className => className).join(' ');
+).filter(Boolean).join(' ');
 
 export default mergeClassNames;
