@@ -1,6 +1,6 @@
 {
   "name": "merge-class-names",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A function that merges given class names, no matter their format: string with single or multiple class names or an array of class names. Filters out invalid class names as well.",
   "main": "dist/entry.js",
   "es6": "src/entry.js",
