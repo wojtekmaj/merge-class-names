@@ -1,4 +1,4 @@
-import mergeClassNames from '../entry';
+import mergeClassNames from './index';
 
 describe('mergeClassNames', () => {
   it('returns nothing given nothing', () => {
