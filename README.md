@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/merge-class-names.svg)](https://www.npmjs.com/package/merge-class-names) ![downloads](https://img.shields.io/npm/dt/merge-class-names.svg) ![build](https://img.shields.io/travis/wojtekmaj/merge-class-names/master.svg)
+[![npm](https://img.shields.io/npm/v/merge-class-names.svg)](https://www.npmjs.com/package/merge-class-names) ![downloads](https://img.shields.io/npm/dt/merge-class-names.svg) ![build](https://img.shields.io/travis/wojtekmaj/merge-class-names/master.svg) ![dependencies](https://img.shields.io/david/wojtekmaj/merge-class-names.svg) ![dev dependencies](https://img.shields.io/david/dev/wojtekmaj/merge-class-names.svg) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 # Merge-Class-Names
 A function that merges given class names, no matter their format. Filters out invalid class names as well.
