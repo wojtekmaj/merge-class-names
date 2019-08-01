@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/merge-class-names.svg)](https://www.npmjs.com/package/merge-class-names) ![downloads](https://img.shields.io/npm/dt/merge-class-names.svg) ![build](https://img.shields.io/travis/wojtekmaj/merge-class-names/master.svg)
+
 # Merge-Class-Names
 A function that merges given class names, no matter their format. Filters out invalid class names as well.
 
