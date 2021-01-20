@@ -1,5 +1,5 @@
-export default function mergeClassNames(...args) {
-  return args.reduce(
+export default function mergeClassNames() {
+  return Array.prototype.slice.call(arguments).reduce(
     (classList, arg) => (
       (typeof arg === 'string' || Array.isArray(arg))
         ? classList.concat(arg)
