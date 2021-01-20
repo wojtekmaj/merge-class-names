@@ -1,7 +1,7 @@
 export default function mergeClassNames(...args) {
   return args.reduce(
     (classList, arg) => (
-      (typeof arg === 'string' || arg instanceof Array)
+      (typeof arg === 'string' || Array.isArray(arg))
         ? classList.concat(arg)
         : classList
     ),
