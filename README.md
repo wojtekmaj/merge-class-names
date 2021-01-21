@@ -6,7 +6,7 @@ A function that merges given class names, no matter their format. Filters out in
 ## tl;dr
 * Install by executing `npm install merge-class-names` or `yarn add merge-class-names`.
 * Import by adding `import mergeClassNames from 'merge-class-names'`.
-* Pass arguments to it. Forget.
+* Use it in `className` like so: `<div className={mergeClassNames('foo', condition && 'bar', arrayOfClasses)} />`
 
 ## Accepted formats
 * Strings with one or multiple class names: `a`, `a b`
