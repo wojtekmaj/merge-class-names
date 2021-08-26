@@ -32,13 +32,13 @@ describe('mergeClassNames', () => {
   });
 
   it('does not include null, undefined or other non-string arguments in the result', () => {
-    const result = mergeClassNames('a', 'b', 'c', null, 'd', () => {}, 'e', undefined);
+    const result = mergeClassNames('a', 'b', {}, 'c', null, 'd', () => {}, 'e', undefined);
 
     expect(result).toBe('a b c d e');
   });
 
   it('does not include null, undefined or other non-string arguments passed in an array in the result', () => {
-    const result = mergeClassNames('a', 'b', ['c', null], ['d', () => {}], ['e', undefined]);
+    const result = mergeClassNames('a', ['b', {}], ['c', null], ['d', () => {}], ['e', undefined]);
 
     expect(result).toBe('a b c d e');
   });
