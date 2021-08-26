@@ -1,10 +1,6 @@
 export default function mergeClassNames() {
   return Array.prototype.slice.call(arguments).reduce(
-    (classList, arg) => (
-      (typeof arg === 'string' || Array.isArray(arg))
-        ? classList.concat(arg)
-        : classList
-    ),
+    (classList, arg) => classList.concat(arg),
     [],
-  ).filter(Boolean).join(' ');
+  ).filter((arg) => typeof arg === 'string' || Array.isArray(arg)).join(' ');
 }
