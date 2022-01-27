@@ -1,6 +1,3 @@
 {
-  "extends": "wojtekmaj",
-  "rules": {
-    "prefer-rest-params": "off"
-  }
+  "extends": "wojtekmaj"
 }
