@@ -1,3 +1,4 @@
 {
-  "extends": "wojtekmaj"
+  "extends": "wojtekmaj",
+  "parser": "@typescript-eslint/parser"
 }
