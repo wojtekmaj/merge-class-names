@@ -2,6 +2,10 @@
 
 # Merge-Class-Names
 
+> **Warning**
+>
+> This package is no longer maintained. Consider [clsx](https://github.com/lukeed/clsx), equally tiny and more powerful utility that does the same thing.
+
 A function that merges given class names, no matter their format. Filters out invalid class names as well.
 
 ## tl;dr
